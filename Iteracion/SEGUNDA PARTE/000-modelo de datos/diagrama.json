@@ -1,0 +1,172 @@
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "entity",
+      "left": "198.016px",
+      "top": "66.0234px",
+      "width": "",
+      "height": "",
+      "entityName": "Cliente",
+      "properties": [
+        {
+          "id": "prop-1",
+          "name": "id"
+        },
+        {
+          "id": "prop-2",
+          "name": "nombre"
+        },
+        {
+          "id": "prop-3",
+          "name": "apellidos"
+        },
+        {
+          "id": "prop-4",
+          "name": "email"
+        },
+        {
+          "id": "prop-5",
+          "name": "telefono"
+        }
+      ]
+    },
+    {
+      "id": "forma-2",
+      "tipo": "entity",
+      "left": "439.992px",
+      "top": "283.012px",
+      "width": "",
+      "height": "",
+      "entityName": "Campo",
+      "properties": [
+        {
+          "id": "prop-6",
+          "name": "id"
+        },
+        {
+          "id": "prop-7",
+          "name": "Nombre"
+        },
+        {
+          "id": "prop-8",
+          "name": "tipo"
+        },
+        {
+          "id": "prop-9",
+          "name": "descripcion"
+        },
+        {
+          "id": "prop-10",
+          "name": "precio_hora"
+        },
+        {
+          "id": "prop-11",
+          "name": "imagen"
+        }
+      ]
+    },
+    {
+      "id": "forma-3",
+      "tipo": "entity",
+      "left": "434.004px",
+      "top": "86.0156px",
+      "width": "",
+      "height": "",
+      "entityName": "Reserva",
+      "properties": [
+        {
+          "id": "prop-12",
+          "name": "id"
+        },
+        {
+          "id": "prop-13",
+          "name": "fecha"
+        },
+        {
+          "id": "prop-14",
+          "name": "cliente_id"
+        }
+      ]
+    },
+    {
+      "id": "forma-4",
+      "tipo": "entity",
+      "left": "734.023px",
+      "top": "154.023px",
+      "width": "",
+      "height": "",
+      "entityName": "LineaReserva",
+      "properties": [
+        {
+          "id": "prop-15",
+          "name": "id"
+        },
+        {
+          "id": "prop-16",
+          "name": "reserva_id"
+        },
+        {
+          "id": "prop-17",
+          "name": "campo_id"
+        },
+        {
+          "id": "prop-18",
+          "name": "dia"
+        },
+        {
+          "id": "prop-19",
+          "name": "hora"
+        },
+        {
+          "id": "prop-20",
+          "name": "duracion"
+        }
+      ]
+    }
+  ],
+  "flechas": [
+    {
+      "desde": {
+        "shapeId": "forma-1",
+        "propId": "prop-1",
+        "side": "right"
+      },
+      "hasta": {
+        "shapeId": "forma-3",
+        "propId": "prop-14",
+        "side": "left"
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-3",
+        "propId": "prop-12",
+        "side": "right"
+      },
+      "hasta": {
+        "shapeId": "forma-4",
+        "propId": "prop-16",
+        "side": "left"
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-2",
+        "propId": "prop-6",
+        "side": "right"
+      },
+      "hasta": {
+        "shapeId": "forma-4",
+        "propId": "prop-17",
+        "side": "left"
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    }
+  ]
+}
